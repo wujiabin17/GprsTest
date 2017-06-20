@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sprocomm.gprstest.LockActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_imei"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btn_xing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="二维码"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="查询:"/>
+            <TextView
+                android:id = "@+id/tv_search_lock"
+                android:layout_toRightOf="@id/btn_search"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint = "查询锁的状态"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_open_lock"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="开锁："/>
+            <Button
+                android:id="@+id/btn_open_lock_pass"
+                android:layout_width="100dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:text="开锁pass"/>
+            <Button
+                android:id="@+id/btn_open_lock_fail"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:text="开锁fail"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text = "点击开锁次数："/>
+            <TextView
+                android:id = "@+id/tv_lock_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_voice"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="蜂鸣器:"/>
+            <Button
+                android:id="@+id/btn_voice_pass"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:text="蜂鸣pass"/>
+            <Button
+                android:id="@+id/btn_voice_fail"
+                android:layout_width="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:text="蜂鸣fail"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text = "点击蜂鸣器次数："/>
+            <TextView
+                android:id = "@+id/tv_voice_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_reset_motor"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="复位电机"/>
+            <Button
+                android:id="@+id/btn_reset_motor_pass"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:text="复位pass"/>
+            <Button
+                android:id="@+id/btn_reset_motor_fail"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:text="复位fail"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text = "点击复位次数："/>
+            <TextView
+                android:id = "@+id/tv_motor_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_move_mode"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="运输模式"/>
+            <Button
+                android:id="@+id/btn_move_mode_pass"
+                android:layout_width="100dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:text="运输pass"/>
+            <Button
+                android:id="@+id/btn_move_mode_fail"
+                android:layout_width="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:text="运输fail"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text = "点击运输次数："/>
+            <TextView
+                android:id = "@+id/tv_move_mode_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:text = "MES返回结果："
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/tv_mes_return"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id = "@+id/tv_work_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text = "工作模式："/>
+            <TextView
+                android:id ="@+id/tv_imei_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_work_mode"
+                android:text = "未获得"/>
+            <Button
+                android:id="@+id/btn_flush"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="刷新"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

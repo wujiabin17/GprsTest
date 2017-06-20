@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "E:\\GprsTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\back.png",
+        "source": "E:\\GprsTest\\app\\src\\main\\res\\mipmap-hdpi\\back.png"
+    },
+    {
+        "merged": "E:\\GprsTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
+        "source": "E:\\GprsTest\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\GprsTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\mzw_camera_close.png",
+        "source": "E:\\GprsTest\\app\\src\\main\\res\\mipmap-hdpi\\mzw_camera_close.png"
+    },
+    {
+        "merged": "E:\\GprsTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\mzw_camera_open.png",
+        "source": "E:\\GprsTest\\app\\src\\main\\res\\mipmap-hdpi\\mzw_camera_open.png"
+    },
+    {
+        "merged": "E:\\GprsTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "E:\\GprsTest\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    }
+]

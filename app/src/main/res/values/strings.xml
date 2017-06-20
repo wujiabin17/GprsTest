@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">蓝牙与gps二合一</string>
+    <string name="hint_input_imei">请输入15位IMEI号</string>
+    <string name="server">服务器:</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">断开</string>
+    <string name="unlock">开锁</string>
+    <string name="find">找车</string>
+    <string name="change_server">更改锁服务器</string>
+    <string name="change_custom_server">更改主服务器</string>
+    <string name="change_gps_echo_time_gap">更改GPS回报时间间隔</string>
+    <string name="change_heart_beat_time_gap">更改心跳时间间隔</string>
+    <string name="change_gps_pre_time">更改GPS预开启时间</string>
+    <string name="reset_device">重启设备</string>
+    <string name="location">定位</string>
+    <string name="default_imei">861234566543214</string>
+    <string name="no_connect_to_server">没有连接到服务器，或连接已经断开</string>
+    <string name="settings">设置</string>
+    <string name="hint_input_ip">输入锁IP地址</string>
+    <string name="hint_input_port">输入锁端口号</string>
+    <string name="hint_input_custom_ip">输入服务器IP地址</string>
+    <string name="hint_input_custom_port">输入服务器端口号</string>
+    <string name="hint_input_echo_gap_lock">输入上锁状态时GPS回报时间间隔</string>
+    <string name="hint_input_echo_gap_run">输入开锁状态时GPS回报时间间隔</string>
+    <string name="hint_input_gps_pretime">输入GPS预启动时间</string>
+    <string name="hint_input_heart_beat_gap">输入心跳时间间隔</string>
+    <string name="save">保存</string>
+    <string name="hint_input_tyre_perimeter">输入轮胎周长</string>
+    <string name="change_tyre_perimeter">更改轮胎周长</string>
+    <string name="qrcode_notice">请扫描二维码</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="camera_open_notice">您已经开启了灯光！</string>
+    <string name="camera_close_notice">您已经关闭了灯光！</string>
+    <string name="open_light">打开手电筒</string>
+
+    <string name="camera_problem">抱歉，您相机出现问题。您可能需要重启设备。</string>
+    <string name="framwork_problem">二维码扫描暂时出现问题。您重启再试。</string>
+    <string name="msg_share_subject_line">这是我所扫描条码的内容</string>
+    <string name="msg_default_mms_subject">Hi</string>
+    <string name="msg_intent_failed">抱歉，无法打开所需软件。 条码内容可能无效。</string>
+    <string name="button_ok">确定</string>
+    <string name="result_uri">网址路径</string>
+
+    <string name="button_1">浏览器打开</string>
+    <string name="button_2">内容</string>
+    <string name="button_3">其它标题</string>
+    <string name="result_title_default">网址路径</string>
+    <string name="openorclose_light">打开或关闭灯光</string>
+    <string name="qrcode_empty"></string>
+    <string name="qrcode_open">用浏览器打开</string>
+    <string name="paramete_error">参数正确，请重新扫描</string>
+    <!--sprocomm_wjb add for permission-->
+    <string name="missing_required_permission">You have disabled a required permission.</string>
+    <string name="permission_change">Since the permissions change, please re-select the file.</string>
+    <string name="permission_change_redo">Since the permissions change, please redo.</string>
+    <string name="reg_ok">注册</string>
+    <string name="ping_req">"心跳</string>
+    <string name="local">定位</string>
+    <string name="lock">锁车</string>
+    <string name="vibrate">倾斜</string>
+    <string name="relock">补锁信息</string>
+    <string name="lock_state">锁状态</string>
+
+    <string name="test_bt">BT成品测试</string>
+    <string name="test_semi_bt">BT半成品测试</string>
+
+    <string name="ble_disconnected">未连接</string>
+    <string name="ble_connected">已连接</string>
+
+    <string name="pass">Pass</string>
+    <string name="fail">Fail</string>
+
+    <string name="settings_item_name">%1$d.%2$s</string>
+    <string name="save_success">保存成功</string>
+    <string name="reset_success">重置成功</string>
+    <string name="password_error">密码错误</string>
+    <string name="open_value">总%1$d 开%2$d</string>
+    <string name="network_none">请检查网络</string>
+    <string name="upload_success">上传成功</string>
+    <string name="upload_failed">上传失败</string>
+
+    <string name="upload_service_url">http://%1$s:82/MES_Web_Services.asmx</string>
+
+    <string name="upload_result_none">测试结果上传：未上传</string>
+    <string name="upload_result_gsm">GSM状态 Fail</string>
+    <string name="upload_result_in_case">测项未完成</string>
+    <string name="upload_result_open_lock">开锁次数未完成</string>
+    <string name="upload_result_start">开始上传</string>
+    <string name="upload_result">测试结果上传：%1$s</string>
+    <string name="distance_value">距离约%1$1.3f米</string>
+</resources>

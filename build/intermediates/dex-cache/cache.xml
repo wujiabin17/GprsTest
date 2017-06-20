@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\wujiabin\.android\build-cache\c3bf28ba4e52fa6c7aab23298ba45a9278fb1920\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\classes_2068e7a17dc021b9c6f34b6935ebeeecec0589da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\sdk11\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.0_af8233e6fc76bec5357f5bee57f9ec772c03ab92.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\wujiabin\.android\build-cache\6df78eb8242eae32230e02b7dfae79f66bcb27f1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\classes_dbb8715191d58e59975073cc3eec097f4c9f42ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\GprsTest\app\libs\zxing.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f739962ab47f4c7515705f7c29dfbf9240a544b8">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\zxing_247cfd4d3709878676464e5dcaa3170f7ff516e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\wujiabin\.android\build-cache\e7bae2867e6b0854815177a19af24ef883fdf480\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\classes_aa9e3dabb44cad0a5e44951ef1fb95577558c37a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\wujiabin\.android\build-cache\c2adc33260849c24699e8775683d366ec179d932\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\classes_2d7fd929dd165f77b8350ad739e4f4fbd26dc1d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\wujiabin\.android\build-cache\cc0fd795dbd007c3a2d1fd653cc859e84d56e472\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\classes_63daba68c2f248acc042f7b840a7b2a4fbd3a8e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\GprsTest\app\libs\ksoap2-android-assembly-3.5.0-jar-with-dependencies.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="21cd457fa3bf24fcb2ab1e3514930a326f5c5bb6">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-3.5.0-jar-with-dependencies_88b2c46f0d610852c6c967d55c4cc8db07aa052d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\GprsTest\app\libs\xUtils-2.6.14.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\xUtils-2.6.14_75d729e31e9bbba0edb79894a8069f861da4265f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\GprsTest\blelibrary\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c8ccac687522f43190007b62f1a993966ef8672a">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\classes_d27de576ef8a78a44407071691d17bb858555142.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\wujiabin\.android\build-cache\8c94a62150862178f316f11cd0374da3c24545b0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\classes_dd3c45478e9b55d4a8d16ed87c0a815bc814b829.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\wujiabin\.android\build-cache\468eb3d71d270286cd746d47e6564f64c3f238e3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\classes_1f17cc90967dc45d33fb9f8c038062625d0873d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\GprsTest\app\libs\gson-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\gson-2.3.1_a8d3e272d7fe6b7037f8c9a9dbc256476ea34911.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\GprsTest\sunshinelibrary\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7a47c9504f25a5b38ef7ead9344ffdf492725f0f">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\classes_686f2f3c941a2eb2108ef6e751ad3013697dbae7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\wujiabin\.android\build-cache\dfa4ca163b82e614e5f0c086fcc09e278dc5f441\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\classes_50fd40893e9b4728afb1ccbfc8355342aa448701.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\wujiabin\.android\build-cache\092631f7ac63273e6b2950b4827d10925c05013e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="E:\GprsTest\app\build\intermediates\pre-dexed\debug\classes_99152f13b8209557ba63c690b058bf532ed07fbe.jar" />
+    </item>
+
+</items>

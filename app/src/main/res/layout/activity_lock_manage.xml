@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:orientation="vertical"
+    tools:context=".activity.LockManageActivity">
+
+    <ListView
+        android:id="@+id/testcase_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/upload_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:text="@string/upload_result_none"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_open"
+            style="@style/orderButtonStyle"
+            android:text="开锁" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            style="@style/orderButtonStyle"
+            android:text="复位" />
+
+        <Button
+            android:id="@+id/btn_work_state"
+            style="@style/orderButtonStyle"
+            android:text="工作状态" />
+
+        <Button
+            android:id="@+id/btn_gsm_id"
+            style="@style/orderButtonStyle"
+            android:text="GSM ID"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_normal"
+            style="@style/orderButtonStyle"
+            android:text="正常模式" />
+
+        <Button
+            android:id="@+id/btn_transport"
+            style="@style/orderButtonStyle"
+            android:text="运输模式" />
+
+        <Button
+            android:id="@+id/btn_restart"
+            style="@style/orderButtonStyle"
+            android:visibility="gone"
+            android:text="重启" />
+
+        <Button
+            android:id="@+id/btn_gsm_version"
+            style="@style/orderButtonStyle"
+            android:text="GSM版本"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_iccid"
+            style="@style/orderButtonStyle"
+            android:text="ICCID" />
+
+        <Button
+            android:id="@+id/btn_imei"
+            style="@style/orderButtonStyle"
+            android:text="IMEI" />
+
+        <Button
+            android:id="@+id/btn_domain"
+            style="@style/orderButtonStyle"
+            android:text="域名" />
+
+        <Button
+            android:id="@+id/btn_ip"
+            style="@style/orderButtonStyle"
+            android:text="IP" />
+    </LinearLayout>
+
+</LinearLayout>

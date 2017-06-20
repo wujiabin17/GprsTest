@@ -1,0 +1,112 @@
+[
+  {
+    "name": "NAME",
+    "value": "自动获取",
+    "state": 1
+  },
+  {
+    "name": "MAC",
+    "value": "自动获取",
+    "state": 1
+  },
+  {
+    "name": "连接状态",
+    "value": "自动获取",
+    "state": 1
+  },
+  {
+    "name": "GSM ID",
+    "value": "自动获取",
+    "state": 1
+  },
+  {
+    "name": "锁开关状态",
+    "value": "自动获取",
+    "state": 1
+  },
+  {
+    "name": "固件版本",
+    "value": "1.1",
+    "state": 17
+  },
+  {
+    "name": "振动功能",
+    "value": "自动获取",
+    "state": 1
+  },
+  {
+    "name": "工作模式",
+    "value": "自动获取",
+    "state": 1
+  },
+  {
+    "name": "振动状态",
+    "value": "自动获取",
+    "state": 1
+  },
+  {
+    "name": "电量百分比",
+    "value": "85-100",
+    "state": 17
+  },
+  {
+    "name": "GSM状态",
+    "value": "与平台通讯成功",
+    "state": 1
+  },
+  {
+    "name": "上一次GPRS上线需要的时间",
+    "value": "0-60",
+    "state": 17
+  },
+  {
+    "name": "上一次GSM信号强度值",
+    "value": "18-33",
+    "state": 17
+  },
+  {
+    "name": "GPS状态",
+    "value": "已定位",
+    "state": 1
+  },
+  {
+    "name": "上一次GPS定位需要的时间",
+    "value": "0-60",
+    "state": 17
+  },
+  {
+    "name": "上一次GPS收星的数量",
+    "value": "4-30",
+    "state": 17
+  },
+  {
+    "name": "GSM Version",
+    "value": "211715211611",
+    "state": 17
+  },
+  {
+    "name": "开锁次数",
+    "value": "5",
+    "state": 17
+  },
+  {
+    "name": "ICCID",
+    "value": "自动获取",
+    "state": 1
+  },
+  {
+    "name": "IMEI",
+    "value": "自动获取",
+    "state": 1
+  },
+  {
+    "name": "域名",
+    "value": "rocolock.com",
+    "state": 17
+  },
+  {
+    "name": "IP",
+    "value": "47.90.179.917",
+    "state": 17
+  }
+]

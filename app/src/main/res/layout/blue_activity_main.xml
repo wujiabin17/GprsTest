@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.BlueMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="扫描设备"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="刷新" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:divider="@android:color/black"
+        android:dividerHeight="1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/search_settings"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_margin="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn"
+            android:gravity="center"
+            android:text="搜索范围" />
+
+        <Button
+            android:id="@+id/testcase_settings"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_margin="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn"
+            android:gravity="center"
+            android:text="Settings" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Version：" />
+</LinearLayout>

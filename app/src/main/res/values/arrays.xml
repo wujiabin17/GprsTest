@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="gsm_state">
+        <item>关电状态</item>
+        <item>查询SIM卡</item>
+        <item>注册网络</item>
+        <item>初始化短信功能</item>
+        <item>查询GPRS网络</item>
+        <item>连接PPP</item>
+        <item>连接TCP</item>
+        <item>与平台通讯成功</item>
+        <item>已上电</item>
+        <item>故障</item>
+    </string-array>
+
+    <string-array name="gps_state">
+        <item>关电状态</item>
+        <item>未定位</item>
+        <item>已定位</item>
+        <item>故障</item>
+    </string-array>
+</resources>

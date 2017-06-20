@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="RISS:"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/riss_edit"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/distance_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:text="距离约?米" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定" />
+
+</LinearLayout>
