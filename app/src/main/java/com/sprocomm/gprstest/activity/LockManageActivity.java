@@ -1,8 +1,11 @@
 package com.sprocomm.gprstest.activity;
 
+import android.app.Activity;
+import android.app.ActivityManager;
 import android.app.Dialog;
 import android.bluetooth.BluetoothAdapter;
 import android.content.BroadcastReceiver;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -48,6 +51,7 @@ import org.ksoap2.transport.HttpTransportSE;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.locks.Lock;
 
 
 /**
@@ -71,6 +75,8 @@ public class LockManageActivity extends MPermissionsActivity implements OnConnec
 
     private int openTotalTimes = 0;
     private int openSuccessTimes = 0;
+
+    private  static final int SEND_5 = 5;
 
     private int selectMode = -1;
     private SharedPreferences sp;
@@ -660,6 +666,21 @@ public class LockManageActivity extends MPermissionsActivity implements OnConnec
             }
         }, 500);
     }
+        public static boolean isForeground(Context context, String className) {
+            if (context == null || TextUtils.isEmpty(className))
+                return false;
+            ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+            List<ActivityManager.RunningTaskInfo> list = am.getRunningTasks(1);
+            if (list != null && list.size() > 0) {
+                ComponentName cpn = list.get(0).topActivity;
+                if (className.equals(cpn.getClassName()))
+                    return true;
+            }
+            return false;
+        }
+    public static boolean isForeground(Activity activity) {
+        return isForeground(activity, activity.getClass().getName());
+    }
 
     Handler m_myHandler = new Handler(new Handler.Callback() {
         @Override
@@ -673,6 +694,13 @@ public class LockManageActivity extends MPermissionsActivity implements OnConnec
                 case 2:
                     break;
                 case 4:
+                    break;
+                case SEND_5:
+                    if(isForeground(LockManageActivity.this)){
+                        ToastUtils.showMessage("正在跳转至GPS测试...");
+                        Intent intent = new Intent(LockManageActivity.this,GpsMainActivity.class);
+                        startActivity(intent);
+                    }
                     break;
             }
             return false;
@@ -934,16 +962,18 @@ public class LockManageActivity extends MPermissionsActivity implements OnConnec
                     mUploadResult.setText(String.format(getString(R.string.upload_result), result));
                 }
             });
+            m_myHandler.sendEmptyMessageDelayed(SEND_5,2*1000);
             ToastUtils.showMessage(result);
+            return;
         } else {
             ToastUtils.showMessage(R.string.upload_failed);
         }
-        runOnUiThread(new Runnable() {
+       /* runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 onBackPressed();
             }
-        });
+        });*/
     }
 
     @Override

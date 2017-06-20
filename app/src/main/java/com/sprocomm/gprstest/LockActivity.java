@@ -67,10 +67,12 @@ public class LockActivity extends Activity implements View.OnClickListener, Text
     private static final int SENDING = 1;
     private static final int SENDING_OK = 2;
     private static final int SENDING_NO = 3;
+    private static final int SEND_4 = 4;
     private static int lockCount = 0;
     private static int voiceCount =0;
     private static int motorCount = 0;
     private static int moveCount = 0;
+    private boolean isCanSendServer  = false;
 
     private Handler mHandler = new Handler(){
         @Override
@@ -85,6 +87,10 @@ public class LockActivity extends Activity implements View.OnClickListener, Text
                     break;
                 case SENDING_NO:
                     showToast("发送失败，请检查网络和测试网址是否正确");
+                    break;
+                case SEND_4:
+                    sendBroadcastForGetMODE();
+                    btnFlush.callOnClick();
                     break;
             }
         }
@@ -158,6 +164,10 @@ public class LockActivity extends Activity implements View.OnClickListener, Text
     protected void onStart() {
         super.onStart();
         flushWorkMode();
+        lockCount = 0;
+        voiceCount =0;
+        moveCount =0;
+        motorCount = 0;
     }
 
     private void initEvent(){
@@ -184,15 +194,19 @@ public class LockActivity extends Activity implements View.OnClickListener, Text
         switch (v.getId()){
             case R.id.btn_search:
                 send(1);
+                isCanSendServer = false;
                 break;
             case R.id.btn_xing:
                 startActivityForResult(new Intent(this, CaptureActivity.class), RESULT_FROM_CAPTURE_ACTIVITY);
+                isCanSendServer = false;
                 break;
             case R.id.btn_open_lock:
                 send(2);
+                isCanSendServer = false;
                 break;
             case R.id.btn_voice:
                 send(3);
+                isCanSendServer = false;
                 break;
             case R.id.btn_move_mode:
                 if(lockCount < 5 && voiceCount <= 1){
@@ -200,56 +214,67 @@ public class LockActivity extends Activity implements View.OnClickListener, Text
                     break;
                 }
                 send(4);
+                isCanSendServer = false;
                 break;
             case R.id.btn_reset_motor:
                 send(5);
+                isCanSendServer = false;
                 break;
             case R.id.btn_open_lock_pass:
                 isOpenLock = TEST_PASS;
                 btnOpenLockPass.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
                 btnOpenLockFail.setBackgroundColor(getResources().getColor(android.R.color.white));
+                isCanSendServer = true;
                 break;
             case R.id.btn_open_lock_fail:
                 isOpenLock = TEST_FAIL;
                 btnOpenLockPass.setBackgroundColor(getResources().getColor(android.R.color.white));
                 btnOpenLockFail.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+                isCanSendServer = true;
                 break;
             case R.id.btn_voice_pass:
                 isVoice = TEST_PASS;
                 btnVoicePass.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
                 btnVoiceFail.setBackgroundColor(getResources().getColor(android.R.color.white));
+                isCanSendServer = true;
                 break;
             case R.id.btn_voice_fail:
                 isVoice = TEST_FAIL;
                 btnVoicePass.setBackgroundColor(getResources().getColor(android.R.color.white));
                 btnVoiceFail.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+                isCanSendServer = true;
                 break;
             case R.id.btn_reset_motor_pass:
                 isResetMotor = TEST_PASS;
                 btnResetMotorPass.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
                 btnResetMotorFail.setBackgroundColor(getResources().getColor(android.R.color.white));
+                isCanSendServer = true;
                 break;
             case R.id.btn_reset_motor_fail:
                 isResetMotor = TEST_FAIL;
                 btnResetMotorPass.setBackgroundColor(getResources().getColor(android.R.color.white));
                 btnResetMotorFail.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+                isCanSendServer = true;
                 break;
             case R.id.btn_move_mode_pass:
                 isMoveMode = TEST_PASS;
                 btnMovePass.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
                 btnMoveFail.setBackgroundColor(getResources().getColor(android.R.color.white));
+                isCanSendServer = true;
                 break;
             case R.id.btn_move_mode_fail:
                 isMoveMode = TEST_FAIL;
                 btnMovePass.setBackgroundColor(getResources().getColor(android.R.color.white));
                 btnMoveFail.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+                isCanSendServer = true;
                 break;
             case R.id.btn_flush:
                 flushWorkMode();
+                isCanSendServer = false;
                 break;
         }
         int isPass = -1;
-        if(isOpenLock != NO_CLICK && isVoice != NO_CLICK && isMoveMode != NO_CLICK){
+        if(isCanSendServer && isOpenLock != NO_CLICK && isVoice != NO_CLICK && isMoveMode != NO_CLICK){
             if(tvSearchLock.getText() != null && isOpenLock == TEST_PASS  && isVoice == TEST_PASS && isMoveMode == TEST_PASS) {
                 isPass = 1;
             }else if(tvSearchLock.getText() == null || isOpenLock == TEST_FAIL || isVoice ==TEST_FAIL || isMoveMode == TEST_FAIL){
@@ -276,6 +301,12 @@ public class LockActivity extends Activity implements View.OnClickListener, Text
     }
     private void showToast(String toast){
         Toast.makeText(this,toast,Toast.LENGTH_SHORT).show();
+    }
+
+    private void sendBroadcastForGetMODE(){
+        Intent intent  = new Intent();
+        intent.setAction(com.sunshine.blelibrary.config.Config.GET_MODE);
+        sendBroadcast(intent);
     }
 
     private void flushWorkMode(){
@@ -345,6 +376,7 @@ public class LockActivity extends Activity implements View.OnClickListener, Text
                                     btnMoveFail.setBackgroundColor(getResources().getColor(android.R.color.white));
                                     btnMovePass.setEnabled(true);
                                     btnMoveFail.setEnabled(true);
+                                    mHandler.sendEmptyMessageDelayed(SEND_4,10*1000);
                                /*     btnOpenLock.setEnabled(false);
                                     btnVoice.setEnabled(false);
                                     btnResetMotor.setEnabled(false);*/
